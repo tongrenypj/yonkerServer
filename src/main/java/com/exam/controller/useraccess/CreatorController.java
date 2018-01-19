@@ -128,7 +128,7 @@ public class CreatorController {
         Project project = gson.fromJson(msg, Project.class);
 
         //通过工程列表名找到相应project
-        Project project1 = projectRepository.findByProjectNumber(project.getProjectNumber());
+        Project project1 = projectRepository.findByProjectId(project.getProjectId());
 
         if (project1 != null) {
             List<ProjectPlan> projectPlanList = projectPlanRepository.findByProjectId(project1.getProjectId());
