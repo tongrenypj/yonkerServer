@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    drver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.28.41.7:3306/yonker
+
+    username: root
+    password: root
+    max_allowed_packet: 20M
+  http:
+    multipart:
+      max-file-size: 200Mb
+      max-request-size: 200Mb
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+
+
+
+
+
+
+
